@@ -1,5 +1,10 @@
 <?php
 
+namespace Expo;
+
+/**
+ * Class managing teams
+ */
 class Team
 {
 	/** @var string */
@@ -34,21 +39,5 @@ class Team
 	public function getMembers()
 	{
 		return $this->_members;
-	}
-
-	/**
-	 * @param Client  $client  the client you want to bind to this team
-	 */
-	public function setClient(Client $client)
-	{
-		$this->_client = $client;
-	}
-
-	/**
-	 * @return Client  the project client
-	 */
-	public function getClient()
-	{
-		return $this->_client;
 	}
 }

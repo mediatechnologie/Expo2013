@@ -2,10 +2,13 @@
 
 require_once('lib/Member.php');
 require_once('lib/Team.php');
+require_once('lib/Client.php');
 require_once('lib/Project.php');
 
 require_once('lib/ProjectFactory.php');
 require_once('lib/ProjectController.php');
+
+use Expo\ProjectController as ProjectController;
 
 $directive = array_key_exists('PATH_INFO', $_SERVER) ? $_SERVER['PATH_INFO'] : '/';
 $directives = explode('/', $directive);
