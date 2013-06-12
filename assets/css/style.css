@@ -1,0 +1,93 @@
+iframe { width: 100%; height: 100%; border: 0; }
+
+nav { width: 100%; bottom: 0px; position: absolute; background: rgba(155,155,155,0.65); }
+nav ul { padding: 0; padding-left: 18px; margin: 0; }
+nav ul h3, nav ul h4 { letter-spacing: 1px; margin: 8px 0px; }
+nav ul h3 { background-color: #667187; margin: 0; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 10px; color: white; }
+nav > ul { list-style: none; overflow: hidden; padding: 8px; }
+nav > ul > li:nth-child(1) { float: left; width: 200px; }
+nav > ul > li:nth-child(2) { float: right; }
+
+nav li aside { color: #b5c1d7; border-radius: 10px; position: absolute; margin-left: -275px; bottom: 65px; background-color: #4d586e; width: 300px; }
+aside h1, aside h2, aside h3, aside h4 { color: white; font-weight: normal; }
+nav li aside h4 { font-style: italic; }
+nav li aside h4, nav li aside p { margin: 5px 10px; }
+nav li aside ul { margin: 5px 10px 15px 10px; }
+
+nav a { text-indent: -10000px; display: block; float: left; width: 32px; height: 32px; }
+
+nav > ul > li > span { 
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+ 	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	text-indent: -1000px;  
+	color: #666; 
+	padding: 5px 40px; 
+	display: block; 
+}
+
+nav > ul > li a:nth-child(1):hover~span { 
+	text-indent: 0px;
+}
+
+	nav > ul > li:nth-child(1) {
+		-webkit-transition: all 2s ease-in-out;
+		-moz-transition: all 2s ease-in-out;
+	 	-o-transition: all 2s ease-in-out;
+		-ms-transition: all 2s ease-in-out;
+		transition: all 2s ease-in-out;
+	}
+
+	nav > ul > li a:nth-child(1):hover { 
+		-webkit-animation: wiggle 2s ease-in-out infinite;
+    	-moz-animation: wiggle 2s ease-in-out infinite;
+    	animation: wiggle 2s ease-in-out infinite; 
+    }
+
+	nav li:nth-child(1) a.icon-back-blue-x32 { background: url('../images/icon_blue_x32.png'); }
+	nav li:nth-child(2) a.icon-back-blue-x32 { background: url('../images/icon_blue_x32.png'); }
+
+@-webkit-keyframes wiggle {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  50% { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+}
+
+@-moz-keyframes wiggle {
+  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  50% { -moz-transform: rotate(10deg); transform: rotate(10deg); }
+  100% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+}
+
+@keyframes wiggle {
+  0% { 
+    -moz-transform: rotate(0deg) translate(0px);
+    -webkit-transform: rotate(0deg) translate(0px);
+    -o-transform: rotate(0deg) translate(0px);
+    transform: rotate(0deg) translate(0px);
+  }
+  50% { 
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  100% { 
+    -moz-transform: rotate(0deg) translate(0px);
+    -webkit-transform: rotate(0deg) translate(0px);
+    -o-transform: rotate(0deg) translate(0px);
+    transform: rotate(0deg) translate(0px);
+  }
+}
+
+#more {
+	display: none;
+}
+
+#more:target {
+	display: block;
+}
+
+.bold { color: white; }
