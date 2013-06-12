@@ -1,0 +1,29 @@
+{
+	"name": "Website & Huistijl De Hoeksteen",
+	"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+	"teams": [{
+		"name": "De Hoeksteen: Groep 1",
+		"members": [
+			{
+				"name":  "Jelmar Bosscher",
+				"class": "IV4a"
+			},
+			{
+				"name":  "Edwin Robert",
+				"class": "IV4a"
+			},
+			{
+				"name":  "Daan Tuinstra",
+				"class": "IV4a"
+			}
+		]
+	}],
+	"client": {
+		"name":    "***",
+		"company": "De Hoeksteen"
+	},
+	"extra": {
+		"index": 3,
+		"url":   "http://mi1.hosts.ma-cloud.nl/"
+	}
+}
