@@ -1,8 +1,8 @@
 {
-	"name": "Dual Sync Storage",
+	"name":        "Dual Sync Storage",
 	"description": "Dual Sync Storage is een online / hardware oplossing voor het opslaan van bestanden.",
 	"teams": [{
-		"name": "DSS: Groep 1",
+		"name":    "DSS: Groep 1",
 		"members": [
 			{
 				"name":  "Danny Kriger",
@@ -15,8 +15,8 @@
 		]
 	}],
 	"client": {
-		"name":    "Dennis Brinkhuis",
-		"company": "Skill2Play"
+		"name":         "Dennis Brinkhuis",
+		"organisation": "Skill2Play"
 	},
 	"extra": {
 		"index": 1,

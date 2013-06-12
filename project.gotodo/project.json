@@ -1,8 +1,8 @@
 {
-	"name": "Gotodo",
+	"name":        "Gotodo",
 	"description": "Het doel van het Gotodo project was de realisatie van een online systeem om locaties uit te lichten.",
 	"teams": [{
-		"name": "POI: Groep 4",
+		"name":    "POI: Groep 4",
 		"members": [
 			{
 				"name":  "Mathijs Bernson",
@@ -19,8 +19,8 @@
 		]
 	}],
 	"client": {
-		"name":    "Dennis Brinkhuis",
-		"company": "Skill2Play"
+		"name":         "Dennis Brinkhuis",
+		"organisation": "Skill2Play"
 	},
 	"extra": {
 		"index": 2,
