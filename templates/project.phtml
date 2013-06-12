@@ -1,0 +1,25 @@
+<iframe src="<?php echo $project->getExtra('url'); ?>"></iframe>
+<nav>
+	<ul>
+		<li>
+			<a class="icon-back-blue-x32" href="../../" title="Ga terug"></a>
+			<span>Ga terug</span>
+		</li>
+		<li>
+			<aside id="more">
+				<h3><?php echo ucfirst($project->getName()); ?></h3>
+				<p>
+					<?php echo $project->getDescription(); ?>
+				</p>
+				<h4>Het team</h4>
+				<ul>
+					<?php foreach($project->getTeams(0)->getMembers() as $member): ?>
+					<li><?php echo $member->getName() . ' (' . $member->getClass() . ')'; ?></li>
+					<?php endforeach; ?>
+				</ul>
+			</aside>
+			<a id="toggle-more" class="icon-back-blue-x32" href="#more">More</a>
+		</li>
+	</ul>
+</nav>
+<script href="assets/scripts/project.js"></script>
