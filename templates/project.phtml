@@ -11,9 +11,13 @@
 				<p>
 					<?php echo $project->getDescription(); ?>
 				</p>
+				<h4>De opdrachtgever</h4>
+				<p>
+					<?php echo $project->getClient()->getName(); ?> (<?php echo $project->getClient()->getOrganisation(); ?>)
+				</p>
 				<h4>Het team</h4>
 				<ul>
-					<?php foreach($project->getTeams(0)->getMembers() as $member): ?>
+					<?php foreach($project->getTeam(0)->getMembers() as $member): ?>
 					<li><?php echo $member->getName() . ' (' . $member->getClass() . ')'; ?></li>
 					<?php endforeach; ?>
 				</ul>

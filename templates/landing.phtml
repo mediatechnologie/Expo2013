@@ -1,6 +1,6 @@
 <h3>Expo software demo :)</h3>
 <ul>
-	<?php foreach(ProjectController::getAll() as $project): ?>
+	<?php foreach(Expo\ProjectController::getAll() as $project): ?>
 	<li>
 		<a href="<?php echo $project->getUrl(); ?>/" title="<?php echo $project->getName(); ?>"><?php echo $project->getName(); ?></a>
 	</li>
