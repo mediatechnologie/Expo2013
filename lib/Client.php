@@ -12,7 +12,7 @@ class Client
 
 	/** @var string */
 	protected $_organisation = '';
-	
+
 	/**
 	 * Constructs a new client object
 	 *

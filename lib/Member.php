@@ -3,7 +3,7 @@
 namespace Expo;
 
 /**
- * Object representing a team Member 
+ * Object representing a team Member
  */
 class Member
 {

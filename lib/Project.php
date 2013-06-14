@@ -196,6 +196,6 @@ class Project
 			return $this->_extra;
 		}
 
-		return $this->_extra[$variable];
+		return isset($this->_extra[$variable]) ? $this->_extra[$variable] : '';
 	}
 }

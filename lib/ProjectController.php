@@ -98,7 +98,7 @@ class ProjectController
 
 	/**
 	 * Function that retrieves all project directories based on the existance of a project.json
-	 * 
+	 *
 	 * @param  string  $directory  the directory to find projects in
 	 * @return string[]            array of project directory paths
 	 */
