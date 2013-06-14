@@ -23,7 +23,10 @@
 		"organisation": "Skill2Play"
 	},
 	"extra": {
-		"index": 2,
-		"url":   "http://www.gotodo.nl/"
+		"index":   2,
+		"url":     "http://www.gotodo.nl/",
+		"image-1": "/expo/assets/images/gotodo_x64.png",
+		"image-2": "/expo/assets/images/gotodo_x136.png",
+		"image-3": "/expo/assets/images/gotodo_x210.png"
 	}
 }
