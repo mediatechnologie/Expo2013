@@ -29,27 +29,24 @@ function generateMap()
 	return $blocks;
 }
 
-function getBlock($map, $w, $h)
+function getBlock(&$map, $w, $h)
 {
-	$collisionMap = $map['collision'];
-
 	do
 	{
 		$isColliding = false;
 
-		$x = rand(0, $w);
+		$x       = rand(0, $w);
 		$offsetX = $x * 64 + $x * 8 - 5;
-
-		$y = rand(0, $h);
+		$y       = rand(0, $h);
 		$offsetY = $y * 64 + $y * 8 - 5;
 
-		$size = $y < 5 ? rand(1,3) : ($y < 6 ? rand(1, 2) : 1);
+		$size    = $y < 5 ? rand(1,3) : ($y < 6 ? rand(1, 2) : 1);
 
 		for($i = 0; $i < $size; $i++)
 		{
 			for($j = 0; $j < $size; $j++)
 			{
-				if(isset($collisionMap[$x + $i][$y + $j]))
+				if(isset($map['collision'][$x + $i][$y + $j]))
 				{
 					$isColliding = true;
 				}
@@ -62,7 +59,7 @@ function getBlock($map, $w, $h)
 			{
 				for($j = 0; $j < $size; $j++)
 				{
-					$collisionMap[$x + $i][$y + $j] = true;
+					$map['collision'][$x + $i][$y + $j] = true;
 				}
 			}
 		}
