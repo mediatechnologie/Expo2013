@@ -1,8 +1,25 @@
-<h3>Expo software demo :)</h3>
+<?php
+
+require_once('templates/helpers/blocklayout.php');
+$blocks = generateMap();
+
+?>
+<h2><span class="ma">M</span>ediacollege <span class="ma">E</span>xpo</h2>
+<style>
+.ma { color: #ee007f; }
+h2 { color: #333; margin: 64px 10px; font-size: 36pt;}
+#grid { position: relative; height: 500px; background: url('/expo/assets/images/landing-background.png') repeat; }
+ul { margin-left: 208px; overflow: hidden; margin: 0 auto; padding: 0; width: 100%; }
+li { list-style: none; position: absolute; border-radius: 10px; background-color: white; margin: 8px; margin-left: 0px; margin-top: 0px; float: left; border: 5px solid white; }
+li a { position: absolute; display: block; border-radius: 10px; }
+li.block-1, li.block-1 a { width: 64px; height: 64px; }
+li.block-2, li.block-2 a { width: 136px; height: 136px; }
+li.block-3, li.block-3 a { width: 210px; height: 208px; }
+</style>
+<div id="grid" width="<?php echo $width; ?>px">
 <ul>
-	<?php foreach(Expo\ProjectController::getAll() as $project): ?>
-	<li>
-		<a href="<?php echo $project->getUrl(); ?>/" title="<?php echo $project->getName(); ?>"><?php echo $project->getName(); ?></a>
-	</li>
+	<?php foreach($blocks as $block): ?>
+	<li class="block-<?php echo $block['size']; ?>" style="left: <?php echo $block['xOffset']; ?>px; top: <?php echo $block['yOffset']; ?>px;"><a href="<?php echo $block['url']; ?>" style="background-image: url('<?php echo $block['image']; ?>');"></a></li>
 	<?php endforeach; ?>
 </ul>
+</div>
