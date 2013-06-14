@@ -19,7 +19,13 @@ li.block-3, li.block-3 a { width: 210px; height: 208px; }
 <div id="grid" width="<?php echo $width; ?>px">
 <ul>
 	<?php foreach($blocks as $block): ?>
-	<li class="block-<?php echo $block['size']; ?>" style="left: <?php echo $block['xOffset']; ?>px; top: <?php echo $block['yOffset']; ?>px;"><a href="<?php echo $block['url']; ?>" style="background-image: url('<?php echo $block['image']; ?>');"></a></li>
+	<li
+		class="block-<?php echo $block['size']; ?>"
+		style="left: <?php echo $block['xOffset']; ?>px; top: <?php echo $block['yOffset']; ?>px;">
+		<a
+			<?php if(isset($block['url'])): ?> href="<?php echo $block['url']; ?>" <?php endif; ?>
+			style="background-image: url('<?php echo $block['image']; ?>');"></a>
+	</li>
 	<?php endforeach; ?>
 </ul>
 </div>
