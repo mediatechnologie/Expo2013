@@ -20,6 +20,9 @@
 	},
 	"extra": {
 		"index": 1,
-		"url":   "http://www.dualsyncstorage.com/"
+		"url":   "http://www.dualsyncstorage.com/",
+		"image-1": "/expo/assets/images/placeholder_x64.png",
+		"image-2": "/expo/assets/images/placeholder_x136.png",
+		"image-3": "/expo/assets/images/placeholder_x210.png"
 	}
 }

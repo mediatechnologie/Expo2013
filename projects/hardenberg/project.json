@@ -24,6 +24,9 @@
 	},
 	"extra": {
 		"index": 3,
-		"url":   "http://mi1.hosts.ma-cloud.nl/"
+		"url":   "http://mi1.hosts.ma-cloud.nl/",
+		"image-1": "/expo/assets/images/placeholder_x64.png",
+		"image-2": "/expo/assets/images/placeholder_x136.png",
+		"image-3": "/expo/assets/images/placeholder_x210.png"
 	}
 }

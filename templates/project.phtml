@@ -1,29 +1,28 @@
-<iframe id="project-iframe" src="<?php echo $project->getExtra('url'); ?>"></iframe>
-<nav>
-	<ul>
-		<li>
-			<a class="icon-back-blue-x32" href="../" title="Ga terug"></a>
-			<span>Ga terug</span>
-		</li>
-		<li>
-			<aside id="more">
-				<h3><?php echo ucfirst($project->getName()); ?></h3>
-				<p>
-					<?php echo $project->getDescription(); ?>
-				</p>
-				<h4>De opdrachtgever</h4>
-				<p>
-					<?php echo $project->getClient()->getName(); ?> (<?php echo $project->getClient()->getOrganisation(); ?>)
-				</p>
-				<h4>Het team</h4>
-				<ul>
-					<?php foreach($project->getTeam(0)->getMembers() as $member): ?>
-					<li><?php echo $member->getName() . ' (' . $member->getGroups(0)->getName() . ')'; ?></li>
-					<?php endforeach; ?>
-				</ul>
-			</aside>
-			<a id="toggle-more" class="icon-back-blue-x32" href="#more">More</a>
-		</li>
-	</ul>
-</nav>
+<aside id="more">
+	<nav>
+		<ul>
+			<li><a href="../" title="Ga terug" class="return-home"></a></li>
+			<li><a id="toggle-more" href="#more" title="Informatie uitklappen" class="return"></a></li>
+		</ul>
+	</nav>
+	<div class="content">
+		<h3><?php echo ucfirst($project->getName()); ?></h3>
+		<p>
+			<?php echo $project->getDescription(); ?>
+		</p>
+		<h4>De opdrachtgever</h4>
+		<p>
+			<?php echo $project->getClient()->getName(); ?> (<?php echo $project->getClient()->getOrganisation(); ?>)
+		</p>
+		<h4>Het team</h4>
+		<ul>
+			<?php foreach($project->getTeam(0)->getMembers() as $member): ?>
+			<li><?php echo $member->getName() . ' (' . $member->getGroups(0)->getName() . ')'; ?></li>
+			<?php endforeach; ?>
+		</ul>
+	</div>
+</aside>
+<div id="container-iframe">
+	<iframe id="project-iframe" src="<?php echo $project->getExtra('url'); ?>"></iframe>
+</div>
 <script href="assets/scripts/project.js"></script>

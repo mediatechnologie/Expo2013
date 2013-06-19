@@ -1,0 +1,28 @@
+{
+	"name":        "<projectnaam>",
+	"description": "<projectbeschrijving>",
+	"teams": [{
+		"name":    "<groepnaam>",
+		"members": [
+			{
+				"name":  "<lid_1>",
+				"class": "<klas_lid_1>"
+			},
+			{
+				"name":  "<lid_2>",
+				"class": "<klas_lid_2>"
+			}
+		]
+	}],
+	"client": {
+		"name":         "<opdrachtgever>",
+		"organisation": "<organisatie_opdrachtgever"
+	},
+	"extra": {
+		"index":   -1,
+		"url":     "<project_of_macloud_url>",
+		"image-1": "/expo/assets/images/placeholder_x64.png",
+		"image-2": "/expo/assets/images/placeholder_x136.png",
+		"image-3": "/expo/assets/images/placeholder_x210.png"
+	}
+}
