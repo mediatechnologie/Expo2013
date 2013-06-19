@@ -10,19 +10,15 @@ class Member
 	/** @var string */
 	protected $_name  = '';
 
-	/** @var string */
-	protected $_class = '';
-
 	/**
 	 * Creates a new Member object
 	 *
 	 * @param string  $name   member name
 	 * @param string  $class  class the member is part of
 	 */
-	public function __construct($name, $class)
+	public function __construct($name)
 	{
 		$this->_name  = $name;
-		$this->_class = $class;
 	}
 
 	/**
@@ -35,13 +31,16 @@ class Member
 		return $this->_name;
 	}
 
-	/**
-	 * Get class the member is part of
-	 *
-	 * @return string  class
-	 */
-	public function getClass()
+	public function getGroups($index = null)
 	{
-		return $this->_class;
+		$storage = Session::get('groupStorage');
+		$groups  = $storage->getGroupsForMember($this);
+
+		if(null !== $index)
+		{
+			return $groups[0];
+		}
+
+		return $groups;
 	}
 }
