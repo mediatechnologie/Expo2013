@@ -8,7 +8,7 @@ function generateMap()
 	$projects = Expo\ProjectController::getAll();
 
 	$blocks    = array();
-	$tileWidth = 19;//count($projects) * 5;
+	$tileWidth = 19;
 	$width     = $tileWidth * 70;
 
 	foreach($projects as $project)
