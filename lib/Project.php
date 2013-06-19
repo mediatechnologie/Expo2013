@@ -114,7 +114,22 @@ class Project
 
 			foreach($t->members as $member)
 			{
-				$team->addMember(new Member($member->name, $member->class));
+				$m = new Member($member->name);
+
+				$groupStorage = Session::get('groupStorage');
+				if(!($group = $groupStorage->getGroup($member->class)))
+				{
+					$group = new Group($member->class);
+					$group->addMember($m);
+
+					$groupStorage->addGroup($group);
+				}
+				else
+				{
+					$group->addMember($m);
+				}
+
+				$team->addMember($m);
 			}
 
 			$this->_teams[] = $team;

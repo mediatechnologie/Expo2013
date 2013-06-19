@@ -1,4 +1,4 @@
-<iframe src="<?php echo $project->getExtra('url'); ?>"></iframe>
+<iframe id="project-iframe" src="<?php echo $project->getExtra('url'); ?>"></iframe>
 <nav>
 	<ul>
 		<li>
@@ -18,7 +18,7 @@
 				<h4>Het team</h4>
 				<ul>
 					<?php foreach($project->getTeam(0)->getMembers() as $member): ?>
-					<li><?php echo $member->getName() . ' (' . $member->getClass() . ')'; ?></li>
+					<li><?php echo $member->getName() . ' (' . $member->getGroups(0)->getName() . ')'; ?></li>
 					<?php endforeach; ?>
 				</ul>
 			</aside>
