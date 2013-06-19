@@ -15,6 +15,9 @@ li a { position: absolute; display: block; border-radius: 10px; }
 li.block-1, li.block-1 a { width: 64px; height: 64px; }
 li.block-2, li.block-2 a { width: 136px; height: 136px; }
 li.block-3, li.block-3 a { width: 210px; height: 208px; }
+
+#overlay { position: fixed; top: 0; bottom: 0; left: 0; right: 0; background-color: white; }
+
 </style>
 <div id="grid" width="<?php echo $width; ?>px">
 <ul>
@@ -29,3 +32,5 @@ li.block-3, li.block-3 a { width: 210px; height: 208px; }
 	<?php endforeach; ?>
 </ul>
 </div>
+<div id="overlay"></div>
+<script src="assets/scripts/landing.js"></script>
