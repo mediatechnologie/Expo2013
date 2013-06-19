@@ -19,6 +19,7 @@ li a:hover { box-shadow: 2px 2px 5px #aa007f; margin-left: -2px; margin-top: -2p
 li.block-1, li.block-1 a { width: 64px; height: 64px; }
 li.block-2, li.block-2 a { width: 136px; height: 136px; }
 li.block-3, li.block-3 a { width: 210px; height: 208px; }
+
 footer { border-top: 1px solid #ddd; }
 .bold { font-weight: bold; }
 
@@ -43,6 +44,8 @@ border-collapse:separate; width: 100%;}
 
 .row .cell:first-child .group { margin-left: 0px; }
 .row .cell:last-child .group { margin-right: 0px; }
+
+#overlay { position: fixed; top: 0; bottom: 0; left: 0; right: 0; background-color: white; }
 
 </style>
 <div id="grid">
@@ -86,3 +89,5 @@ border-collapse:separate; width: 100%;}
 		}
 	?>
 </footer>
+<div id="overlay"></div>
+<script src="assets/scripts/landing.js"></script>
