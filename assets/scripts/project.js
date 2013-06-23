@@ -1,8 +1,5 @@
 (function(window, document, undefined) {
 
-	//var projects = <?php echo json_encode(include('projects.php')); ?>;
-	//var current  = '<?php echo $location; ?>';
-
 	function previousProject() {
 
 		var index = projects.indexOf(current);
