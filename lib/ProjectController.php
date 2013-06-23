@@ -88,12 +88,7 @@ class ProjectController
 	 */
 	public static function isProject($index)
 	{
-		if(in_array($index, self::getIndexes()))
-		{
-			return true;
-		}
-
-		return false;
+		return in_array($index, self::getIndexes());
 	}
 
 	/**
