@@ -7,47 +7,6 @@ use Expo\Session as Session;
 
 ?>
 <h2><span class="ma">M</span>ediacollege <span class="ma">E</span>xpo</h2>
-<style>
-.ma { color: #ee007f; }
-body { margin: 0 auto; width: 1577px;  }
-h2 { color: #333; margin: 64px 0; margin-bottom: 32px; font-size: 36pt;}
-#grid { margin-bottom: 50px; position: relative; height: 500px; background: url('/expo/assets/images/landing-background.png') repeat; }
-ul { margin-left: 208px; overflow:hidden; margin: 0 auto; padding: 0; width: 100%; }
-li { list-style: none; position: absolute; border-radius: 10px; background-color: white; margin: 8px; margin-left: 0px; margin-top: 0px; float: left; border: 5px solid white; }
-li a { position: absolute; display: block; border-radius: 10px; transition: .1s; }
-li a:hover { box-shadow: 2px 2px 5px #aa007f; margin-left: -2px; margin-top: -2px; }
-li.block-1, li.block-1 a { width: 64px; height: 64px; }
-li.block-2, li.block-2 a { width: 136px; height: 136px; }
-li.block-3, li.block-3 a { width: 210px; height: 208px; }
-
-footer { border-top: 1px solid #ddd; }
-.bold { font-weight: bold; }
-
-/* GRID SYSTEM */
-.table { display:table;
-border-collapse:separate; width: 100%;}
-
-.cell { float:left; /*overflow: hidden; height: 100%; /(display:table-cell;*/ }
-
-.row { float: left; /*display:table-row;*/ width: 100%;}
-
-.column-1 { width: 100%; }
-.column-2 { width: 50%; }
-.column-3 { width: 33%; }
-.column-4 { width: 25%; }
-.column-5 { width: 20%; }
-
-/* fix */
-.row:last-child .column-3 { width: 33.3%; }
-
-.group { height: 100%; display: block; border-radius: 10px; padding: 25px; background-color: #eee; margin: 25px; }
-
-.row .cell:first-child .group { margin-left: 0px; }
-.row .cell:last-child .group { margin-right: 0px; }
-
-#overlay { position: fixed; top: 0; bottom: 0; left: 0; right: 0; background-color: white; }
-
-</style>
 <div id="grid">
 <ul>
 	<?php foreach($blocks as $block): ?>
