@@ -52,7 +52,7 @@ border-collapse:separate; width: 100%;}
 <ul>
 	<?php foreach($blocks as $block): ?>
 	<li class="block-<?php echo $block['size']; ?>"
-		style="left: <?php echo $block['xOffset'] . ';' . (!isset($block['url']) ? ' background-image: url(\'' . $block['image'] . '\');' : ''); ?> top: <?php echo $block['yOffset']; ?>px;">
+		style="left: <?php echo $block['xOffset'] . 'px;' . (!isset($block['url']) ? ' background-image: url(\'' . $block['image'] . '\');' : ''); ?> top: <?php echo $block['yOffset']; ?>px;">
 			<?php
 			if(isset($block['url']))
 			{

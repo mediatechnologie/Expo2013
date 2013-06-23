@@ -1,0 +1,62 @@
+iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border: 0;
+}
+
+nav li aside h4, nav li aside p { margin: 5px 10px; }
+nav li aside h4 { font-style: italic; }
+nav li aside ul { margin: 5px 10px 15px 10px; }
+
+.return, .return-home {
+	padding: 5px 0px 0px 40px;
+	padding-left: 32px;
+	display: block;
+	height: 32px;
+}
+	.return { background: url('/expo/assets/images/white_return.png') no-repeat; }
+	.return-home { background: url('/expo/assets/images/return-top.png') no-repeat; }
+
+.bold { color: white; }
+
+#more {
+	overflow: visible;
+	border-left: 1px solid #667187;
+	color: #b5c1d7;
+	right: 0px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	background-color: #4d586e;
+}
+	#more h1,
+	#more h2,
+	#more h3,
+	#more h4 {
+		color: white;
+		font-weight: normal;
+	}
+	#more nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 10px 10px 10px 10px;
+	}
+	#more .content { display: none; background-color: #4d586e; padding: 20px; }
+
+	#more:target {
+		transition: 1s;
+		background: #4d586e url('/expo/assets/images/background-landing-transparant.png') no-repeat bottom 8px right 8px;
+	}
+	#more:target nav {
+		display: block;
+		position: absolute;
+		z-index: 2;
+		margin-left: -52px;
+		background-color: #4d586e;
+		border-bottom-left-radius: 10px;
+	}
+	#more:target .content { width: 257px; display: block; }
+	#more:target .return  { background: url('/expo/assets/images/return-right.png') no-repeat; }
+	#more:target + #container-iframe { margin-right: 298px; }
