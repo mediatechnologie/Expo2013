@@ -1,6 +1,6 @@
 {
-	"name":        "Website & Huistijl De Hoeksteen",
-	"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+	"name":        "Website & Huistijl PrO Hardenberg",
+	"description": "Het ontwerpen en ontwikkelen van de totale huisstijl en website van PrO Hardenberg.",
 	"teams": [{
 		"name":    "De Hoeksteen: Groep 1",
 		"members": [
@@ -13,20 +13,20 @@
 				"class": "IV4a"
 			},
 			{
-				"name":  "Daan Tuinstra",
+				"name":  "Dani&#235;l Hendricus Tuinstra",
 				"class": "IV4a"
 			}
 		]
 	}],
 	"client": {
-		"name":         "***",
-		"organisation": "De Hoeksteen"
+		"name":         "Henk Kremer",
+		"organisation": "PrO Hardenberg"
 	},
 	"extra": {
 		"index": 3,
 		"url":   "http://mi1.hosts.ma-cloud.nl/",
-		"image-1": "/expo/assets/images/placeholder_x64.png",
-		"image-2": "/expo/assets/images/placeholder_x136.png",
-		"image-3": "/expo/assets/images/placeholder_x210.png"
+		"image-1": "/expo/assets/images/hardenberg_x64.png",
+		"image-2": "/expo/assets/images/hardenberg_x136.png",
+		"image-3": "/expo/assets/images/hardenberg_x210.png"
 	}
 }
