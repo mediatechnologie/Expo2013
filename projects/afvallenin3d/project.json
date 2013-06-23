@@ -1,0 +1,32 @@
+{
+	"name":        "Website Afvallen in 3D",
+	"description": "De website biedt informatie over een programma dat de mensen gaat helpen om snel en eenvoudig af te vallen met behulp van de 7 stappen. <br /><br />Het eindproduct van dit project is een interactieve website. De website waarop de mensen het advies aan de professionele diëtisten mogen kunnen vragen.",
+	"teams": [{
+		"name":    "Afvallen in 3D: Groep 1",
+		"members": [
+			{
+				"name":  "Arslan Veldstra",
+				"class": "IV4b"
+			},
+			{
+				"name":  "Suzan Radic",
+				"class": "IV4b"
+			},
+			{
+				"name":  "Joost Vermeulen",
+				"class": "IV4b"
+			}
+		]
+	}],
+	"client": {
+		"name":         "Marjos Papen &#38; Ellen Wilbers",
+		"organisation": "Afvallen in 3D"
+	},
+	"extra": {
+		"index":   5,
+		"url":     "http://mi2.hosts.ma-cloud.nl/afvallenin3d/",
+		"image-1": "/expo/assets/images/afvallenin3d_x64.png",
+		"image-2": "/expo/assets/images/afvallenin3d_x136.png",
+		"image-3": "/expo/assets/images/afvallenin3d_x210.png"
+	}
+}
