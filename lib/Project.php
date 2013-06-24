@@ -7,6 +7,9 @@ namespace Expo;
  */
 class Project
 {
+	/** @var int */
+	protected $_id;
+
 	/** @var string */
 	protected $_name        = '';
 
@@ -25,10 +28,12 @@ class Project
 	/**
 	 * Constructs a new project which resides at the given location
 	 *
+	 * @param int     $id        the unique project identifier
 	 * @param string  $location  the project location
 	 */
-	public function __construct($location)
+	public function __construct($id, $location)
 	{
+		$this->_id       = $id;
 		$this->_location = $location;
 	}
 
@@ -148,7 +153,17 @@ class Project
 		$url = str_replace('&-', '', $url);
 
 		# retrieves a sanitized url from the project name :3
-		return $this->getExtra('index') . DIRECTORY_SEPARATOR . $url;
+		return $this->getId() . DIRECTORY_SEPARATOR . $url;
+	}
+
+	/**
+	 * Get the id of the project
+	 *
+	 * @return int  id
+	 */
+	public function getId()
+	{
+		return $this->_id;
 	}
 
 	/**

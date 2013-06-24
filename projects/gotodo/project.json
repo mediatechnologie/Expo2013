@@ -23,7 +23,6 @@
 		"organisation": "Skill2Play"
 	},
 	"extra": {
-		"index":   2,
 		"url":     "http://staging.gotodo.nl/",
 		"image-1": "assets/images/gotodo_x64.png",
 		"image-2": "assets/images/gotodo_x136.png",

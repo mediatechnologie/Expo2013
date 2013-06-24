@@ -26,8 +26,8 @@ class ProjectController
 			$locations = self::find($directory);
 			foreach($locations as $location)
 			{
-				$project = ProjectFactory::create($location);
-				self::$_projects[$project->getExtra('index')] = $project;
+				$project = ProjectFactory::create(count(self::$_projects) + 1, $location);
+				self::$_projects[] = $project;
 			}
 		}
 
@@ -52,23 +52,6 @@ class ProjectController
 	}
 
 	/**
-	 * Get all indexes of projects found in $directory
-	 *
-	 * @param  string    $directory  the directory
-	 * @return int[]                 array of indexes
-	 */
-	public static function getIndexes($directory = '.')
-	{
-		$indexes = array();
-		foreach(self::getAll($directory) as $project)
-		{
-			$indexes[] = $project->getExtra('index');
-		}
-
-		return $indexes;
-	}
-
-	/**
 	 * Get Project by index
 	 *
 	 * @param  int      $index  to retrieve the project by
@@ -77,7 +60,7 @@ class ProjectController
 	public static function getByIndex($index)
 	{
 		$projects = self::getAll();
-		return isset($projects[$index]) ? $projects[$index] : null;
+		return isset($projects[$index - 1]) ? $projects[$index - 1] : null;
 	}
 
 	/**
@@ -88,7 +71,8 @@ class ProjectController
 	 */
 	public static function isProject($index)
 	{
-		return in_array($index, self::getIndexes());
+		var_dump(count(self::$_projects));
+		return $index <= count(self::$_projects);
 	}
 
 	/**
