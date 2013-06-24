@@ -23,7 +23,6 @@
 		"organisation": "PrO Hardenberg"
 	},
 	"extra": {
-		"index":   3,
 		"url":     "http://mi1.hosts.ma-cloud.nl/",
 		"image-1": "assets/images/hardenberg_x64.png",
 		"image-2": "assets/images/hardenberg_x136.png",

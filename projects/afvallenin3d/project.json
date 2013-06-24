@@ -23,7 +23,6 @@
 		"organisation": "Afvallen in 3D"
 	},
 	"extra": {
-		"index":   5,
 		"url":     "http://mi2.hosts.ma-cloud.nl/afvallenin3d/",
 		"image-1": "assets/images/afvallenin3d_x64.png",
 		"image-2": "assets/images/afvallenin3d_x136.png",
