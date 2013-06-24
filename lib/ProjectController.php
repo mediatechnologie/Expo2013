@@ -64,18 +64,6 @@ class ProjectController
 	}
 
 	/**
-	 * Is this index found in the projects?
-	 *
-	 * @param  int      $index  the index to check for projectism
-	 * @return boolean          indicating whether the name is guilty of projectism
-	 */
-	public static function isProject($index)
-	{
-		var_dump(count(self::$_projects));
-		return $index <= count(self::$_projects);
-	}
-
-	/**
 	 * Function that retrieves all project directories based on the existance of a project.json
 	 *
 	 * @param  string  $directory  the directory to find projects in
