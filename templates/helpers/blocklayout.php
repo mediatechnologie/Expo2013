@@ -15,6 +15,11 @@ function generateMap()
 	{
 		$block = getBlock($map, $tileWidth, 6);
 		$block['image'] = $project->getExtra('image-' . $block['size']);
+		if(strpos($block['image'], '/') !== 0)
+		{
+			$block['image'] = $project->getLocation() . DIRECTORY_SEPARATOR . $block['image'];
+
+		}
 		$block['url']   = $project->getUrl();
 
 		$blocks[] = $block;
