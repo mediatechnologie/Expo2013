@@ -30,9 +30,8 @@ if(empty($directives[0]))
 	ProjectController::getAll(); // Groups need a full project initialization
 	$template = 'templates/landing.phtml';
 }
-else if(ProjectController::isProject($directives[0]))
+else if(null !== ($project = ProjectController::getByIndex($directives[0])))
 {
-	$project  = ProjectController::getByIndex($directives[0]);
 	$template = 'templates/project.phtml';
 }
 else
