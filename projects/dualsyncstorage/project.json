@@ -19,10 +19,10 @@
 		"organisation": "Skill2Play"
 	},
 	"extra": {
-		"index": 1,
-		"url":   "http://www.dualsyncstorage.com/",
-		"image-1": "/expo/assets/images/dualsyncstorage_x64.png",
-		"image-2": "/expo/assets/images/dualsyncstorage_x136.png",
-		"image-3": "/expo/assets/images/dualsyncstorage_x210.png"
+		"index":   1,
+		"url":     "http://www.dualsyncstorage.com/",
+		"image-1": "assets/images/dualsyncstorage_x64.png",
+		"image-2": "assets/images/dualsyncstorage_x136.png",
+		"image-3": "assets/images/dualsyncstorage_x210.png"
 	}
 }
