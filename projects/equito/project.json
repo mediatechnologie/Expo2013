@@ -1,19 +1,31 @@
 {
-	"name":        "Gotodo",
-	"description": "Het doel van het Gotodo project was de realisatie van een online systeem om locaties uit te lichten.",
+	"name":        "Equito",
+	"description": "Website waar leden van Ponymanege Equito kunnen samenkomen om te praten, delen en ontdekken. Op de website is ook informatie vinden over de pony's van Equito en over pony's in het algemeen.",
 	"teams": [{
-		"name":    "POI: Groep 4",
+		"name":    "Groep 1",
 		"members": [
+			{
+				"name":  "Dennis de Vulder",
+				"class": "IV4B"
+			},
+			{
+				"name":  "Eelco Viel",
+				"class": "IV4B"
+			},
+			{
+				"name":  "Zishan Khushi Pasha",
+				"class": "IV4B"
+			}
 		]
 	}],
 	"client": {
-		"name":         "Dennis Brinkhuis",
-		"organisation": "Skill2Play"
+		"name":         "Maaike, Axel, Ponymanege equito",
+		"organisation": "Equito"
 	},
 	"extra": {
-		"url":     "http://www.gotodo.nl/",
-		"image-1": "/expo/assets/images/placeholder_x64.png",
-		"image-2": "/expo/assets/images/placeholder_x136.png",
-		"image-3": "/expo/assets/images/placeholder_x210.png"
+		"url":     "http://equito.herokuapp.com",
+		"image-1": "assets/images/equito_x64.png",
+		"image-2": "assets/images/equito_x136.png",
+		"image-3": "assets/images/equito_x210.png"
 	}
 }
